@@ -79,9 +79,13 @@
 
     <!-- Site Verification -->
     <meta name="google-site-verification" content="iTFnlyZsA14YA3DzIskD8UqhBLqIOp-HsTPyqVVTcfc" />
-    <meta name="baidu-site-verification" content="z4fpqDfgQk" />
+    
 
     <!-- RSS -->
+    
+        
+            <link rel=alternate type="application/atom+xml" href="atom.xml">
+        
     
 
     <!--[if lte IE 9]>
@@ -208,7 +212,31 @@
 <!-- Import Font -->
 <!-- Import Roboto -->
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-300.eot);
+            src: local('Roboto'),local('Roboto-Normal'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-300.eot?#iefix) format('embedded-opentype'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-300.woff2) format('woff2'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-300.woff) format('woff'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-300.ttf) format('truetype'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-300.svg#Roboto) format('svg')
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: regular;
+            src: url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-regular.eot);
+            src: local('Roboto'),local('Roboto-Normal'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-regular.eot?#iefix) format('embedded-opentype'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-regular.woff2) format('woff2'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-regular.woff) format('woff'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-regular.ttf) format('truetype'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-regular.svg#Roboto) format('svg')
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-500.eot);
+            src: local('Roboto'),local('Roboto-Normal'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-500.eot?#iefix) format('embedded-opentype'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-500.woff2) format('woff2'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-500.woff) format('woff'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-500.ttf) format('truetype'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-500.svg#Roboto) format('svg')
+        }
+    </style>
 
 
 <!-- Import Material Icons -->
@@ -411,6 +439,18 @@
 
     <!-- Qrcode -->
     
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACbElEQVR42u3aQY7jMAwEwPz/07PXBXbW6aZkxTMon4LAsVk6iAzF19evvl54eHh4eHh4eHgP473i63/3//19/vnfp30TaBkbHh4e3knem632kpeEeP3b6/vz2PDw8PDO82abfhLE3ne9STZ4eHh4D+Pl31wXx3nBjYeHh/fTedelcFIu50UzHh4e3vN5xR/+GNCGviE2PDw8vCO89gDs5OcPnO/h4eHhXfKGg01xQ2FvOqmHrvDw8PBu4OVthXxEYLYE7UjBcOgKDw8Pb5nXtmLzrXxvsV7EhoeHh3eEl2/W+RjBbAnaZ0aJAQ8PD28rb+UFK9t6UnzPlg8PDw/vDO/oAVU5ktW2d/Hw8PDu5q00F/KiPD8em6UKPDw8vPO82cvyQrz9ZmmZ8PDw8I7w8nK2PdrPl3K2iEWXGg8PD28rLw90PTG0i1svFh4eHt7NvPwArE0Dbbu2TRWbRwfw8PDwSt4dBe5sRHU2AouHh4f3Kd5sHCoPcZZs8gXCw8PDO8ObPS5vH8wK6NlIAR4eHt4ZXr6Jz0ay8tGB60iGowN4eHh4R3jtcdRsUHWWfqI2MR4eHt5BXn5In7cVivbr6FANDw8P71O8NtxhmyC+Z9bUwMPDwzvDa69k02/bECtLiYeHh3ee94qvfLwgKZ3XR1TrvIeHh4e3lZcng2QJknbwevk+7FLj4eHhbeUlyaDd6PNRgDw5vSnK8fDw8B7Myw+0ZkklSVd4eHh4z+etpIr8t7PmBR4eHt55XnvolbRuW3ySBm7steDh4eHFvPYAbL0B0baMi4XAw8PDu5n3+y48PDw8PDw8PLwHXH8A648rJi6BTFIAAAAASUVORK5CYII=">
+    
+</ul>
+
+    
 
     <!-- Tags (bookmark) -->
     
@@ -490,6 +530,32 @@
                 <!-- Post Comments -->
                 
                     
+    <!-- 使用 gitcoment -->
+<div id="gitment-comment">
+    <!-- Gitment 评论框 -->
+<div id="container"></div>
+</div>
+<style>
+    #gitment-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        //id: '页面 ID', // 可选。默认为 location.href
+        owner: 'jason1066651590',
+        repo: 'https://github.com/jason1066651590/hexo-comment.git',
+        oauth: {
+            client_id: '79e19be1dda2797ac85b',
+            client_secret: 'ce9cde224b53b65b78fa41671442e0dff1920848',
+        },
+    })
+    gitment.render('container')
+</script>
+
                 
             </div>
 
@@ -546,7 +612,7 @@
 
     <!-- Sidebar Email -->
     <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
-        jason1066651590@email.com
+        jason1066651590@gmail.com
         <b class="caret"></b>
     </a>
 </div>
@@ -664,15 +730,36 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Help & Support -->
 <!--
 
+    <a href="mailto:hiviosey@gmail.com" class="sidebar-footer-text-a">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+        sidebar.help
+        <span class="mdl-button__ripple-container">
+          <span class="mdl-ripple"></span>
+        </span>
+      </div>
+    </a>
+
 -->
 
 <!-- Feedback -->
 <!--
 
+    <a href="https://github.com/viosey/hexo-theme-material/issues" target="_blank" class="sidebar-footer-text-a">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+        sidebar.feedback
+        <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+    </a>
+
 -->
 
 <!-- About Theme -->
 <!--
+
+    <a href="https://blog.viosey.com/index.php/Material.html" target="_blank" class="sidebar-footer-text-a">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+             sidebar.about_theme
+            <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+    </a>
 
 -->
 
@@ -811,6 +898,8 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
+
+   <!-- Gitment -->
 
 
 

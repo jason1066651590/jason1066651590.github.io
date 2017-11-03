@@ -30,5 +30,11 @@
   
   
     
+    <entry>
+      <title><![CDATA[gallery]]></title>
+      <url>/gallery/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
   
 </search>

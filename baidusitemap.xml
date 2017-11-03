@@ -5,18 +5,18 @@
     
   <url>
     <loc>http://www.sharelogs.net/2017/11/04/myFirstLog/</loc>
-    <lastmod>2017-11-03T11:57:37.996Z</lastmod>
+    <lastmod>2017-11-03T12:17:46.446Z</lastmod>
     <data>
         <display>
-        <title>'myFirstLog</title>
+        <title>First Log</title>
         <pubTime>2017-11-03T19:54:56.000Z</pubTime>
         
-        <tag>tag1</tag>
+        <tag>tag</tag>
          
          
            
              
-              <breadCrumb title="category1" url="http://www.sharelogs.net/categories/category1/"/>
+              <breadCrumb title="category" url="http://www.sharelogs.net/categories/category/"/>
           
         </display>
     </data>

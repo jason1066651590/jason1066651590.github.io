@@ -3,6 +3,44 @@
   
     
     <entry>
+      <title><![CDATA[《ECMAScript 6入门（第三版）》读书笔记——let & const]]></title>
+      <url>/2017/11/05/let%20&amp;%20const/</url>
+      <content type="html"><![CDATA[<blockquote>
+<h3 id="let"><a href="#let" class="headerlink" title="let"></a>let</h3></blockquote>
+<h4 id="特征"><a href="#特征" class="headerlink" title="特征"></a>特征</h4><ul>
+<li>没有变量提升</li>
+<li>只在命令所在代码块内有效</li>
+<li>不能在相同作用域内，重复声明同一个变量</li>
+<li>暂时性死区，即不可再let声明之前使用变量，抛出错误</li>
+</ul>
+<h4 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h4><ul>
+<li>for循环计数器</li>
+</ul>
+<blockquote>
+<h3 id="const"><a href="#const" class="headerlink" title="const"></a>const</h3></blockquote>
+<h4 id="本质"><a href="#本质" class="headerlink" title="本质"></a>本质</h4><p>变量指向的那个内存地址不得改动</p>
+<ul>
+<li>简单数据类型，值保存在变量指向的内存地址</li>
+<li>复合类型，保存的是一个指针，内部数据结构不能控制</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> 读书笔记 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> ES6 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[First Log]]></title>
       <url>/2017/11/04/myFirstLog/</url>
       <content type="html"><![CDATA[<h1 id="Welcome-to-my-sharelogs"><a href="#Welcome-to-my-sharelogs" class="headerlink" title="Welcome to my sharelogs"></a>Welcome to my sharelogs</h1>]]></content>

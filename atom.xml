@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.sharelogs.net/"/>
-  <updated>2017-11-03T12:25:10.549Z</updated>
+  <updated>2017-11-04T11:15:56.377Z</updated>
   <id>http://www.sharelogs.net/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《ECMAScript 6入门（第三版）》读书笔记——let &amp; const</title>
+    <link href="http://www.sharelogs.net/2017/11/05/let%20&amp;%20const/"/>
+    <id>http://www.sharelogs.net/2017/11/05/let &amp; const/</id>
+    <published>2017-11-04T19:06:56.000Z</published>
+    <updated>2017-11-04T11:15:56.377Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;h3 id=&quot;let&quot;&gt;&lt;a href=&quot;#let&quot; class=&quot;headerlink&quot; title=&quot;let&quot;&gt;&lt;/a&gt;let&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;特征&quot;&gt;&lt;a href=&quot;#特征&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://www.sharelogs.net/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="ES6" scheme="http://www.sharelogs.net/tags/ES6/"/>
+    
+  </entry>
   
   <entry>
     <title>First Log</title>

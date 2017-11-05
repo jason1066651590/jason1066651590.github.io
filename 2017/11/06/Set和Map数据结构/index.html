@@ -37,7 +37,7 @@
     
     <title>
         
-            《ECMAScript 6入门（第三版）》读书笔记——let &amp; const | 
+            《ECMAScript 6入门（第三版）》——Set和Map数据结构 | 
         
         Sharelogs
     </title>
@@ -48,7 +48,7 @@
     <meta name="format-detection" content="telephone=no"/>
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="花猪">
-    <meta name="description" itemprop="description" content="">
+    <meta name="description" itemprop="description" content="分享有意思的玩意">
     <meta name="keywords" content="sharelogs,ES6">
 
     <!-- Import lsloader -->
@@ -255,26 +255,26 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://www.sharelogs.net">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="《ECMAScript 6入门（第三版）》读书笔记——let &amp; const | Sharelogs">
+    <meta property="og:title" content="《ECMAScript 6入门（第三版）》——Set和Map数据结构 | Sharelogs">
     <meta property="og:image" content="http://www.sharelogs.net/img/mylogo.jpg" />
-    <meta property="og:description" content="">
+    <meta property="og:description" content="分享有意思的玩意">
     <meta property="og:article:tag" content="ES6"> 
 
     
-        <meta property="article:published_time" content="Sat Nov 04 2017 19:06:56 GMT+0000" />
-        <meta property="article:modified_time" content="Sat Nov 04 2017 19:15:56 GMT+0800" />
+        <meta property="article:published_time" content="Sun Nov 05 2017 17:04:02 GMT+0000" />
+        <meta property="article:modified_time" content="Sun Nov 05 2017 17:05:31 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="《ECMAScript 6入门（第三版）》读书笔记——let &amp; const | Sharelogs">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="《ECMAScript 6入门（第三版）》——Set和Map数据结构 | Sharelogs">
+    <meta name="twitter:description" content="分享有意思的玩意">
     <meta name="twitter:image" content="http://www.sharelogs.net/img/mylogo.jpg">
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="http://www.sharelogs.net" />
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://www.sharelogs.net/2017/11/05/let & const/index.html" />
+        <link rel="canonical" href="http://www.sharelogs.net/2017/11/06/Set和Map数据结构/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -286,10 +286,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://www.sharelogs.net/2017/11/05/let & const/index.html",
-    "headline": "《ECMAScript 6入门（第三版）》读书笔记——let & const",
-    "datePublished": "Sat Nov 04 2017 19:06:56 GMT+0000",
-    "dateModified": "Sat Nov 04 2017 19:15:56 GMT+0800",
+    "mainEntityOfPage": "http://www.sharelogs.net/2017/11/06/Set和Map数据结构/index.html",
+    "headline": "《ECMAScript 6入门（第三版）》——Set和Map数据结构",
+    "datePublished": "Sun Nov 05 2017 17:04:02 GMT+0000",
+    "dateModified": "Sun Nov 05 2017 17:05:31 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "花猪",
@@ -308,7 +308,7 @@
         }
     },
     "keywords": ",ES6sharelogs",
-    "description": "",
+    "description": "分享有意思的玩意",
 }
 </script>
 
@@ -373,7 +373,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#let"><span class="post-toc-number">1.</span> <span class="post-toc-text">let</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#特征"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">特征</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#应用场景"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">应用场景</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#const"><span class="post-toc-number">2.</span> <span class="post-toc-text">const</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#本质"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">本质</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Set"><span class="post-toc-number">1.</span> <span class="post-toc-text">Set</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Set-实例的属性和方法"><span class="post-toc-number">2.</span> <span class="post-toc-text">Set 实例的属性和方法</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Map"><span class="post-toc-number">3.</span> <span class="post-toc-text">Map</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#实例的属性和操作方法"><span class="post-toc-number">4.</span> <span class="post-toc-text">实例的属性和操作方法</span></a></li></ol>
     </ul>
     
 
@@ -405,7 +405,7 @@
         
     
             <p class="article-headline-p">
-                《ECMAScript 6入门（第三版）》读书笔记——let & const
+                《ECMAScript 6入门（第三版）》——Set和Map数据结构
             </p>
         </div>
 
@@ -424,7 +424,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>花猪</strong>
-        <span>11月 04, 2017</span>
+        <span>11月 05, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -446,7 +446,7 @@
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
     <li class="mdl-menu__item">在其它设备中阅读本文章</li>
     
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACZklEQVR42u3aQW6EMAwFUO5/6XZbqYL5tkNAo5dVNVDixyIOjo+frx4HHh4eHh4eHh7ey3hHPP7ef/aE/Jf/T7t+chIbHh4e3k7eh6X25J7rac4A+evrxYaHh4e3k5cng+v/nSMnseHh4eG9jdfbZOdX8fDw8L6Vl4QyB+Ph4eG9n1ddoKsFi3zGx2oteHh4eDGvdwC25+/Hzvfw8PDwTnjllqY4SSQl2jzBFCLEw8PDu5l395H/dQNWbyz4YsDDw8Mb81a1Q/WOzXptB4XEgIeHh3cDLzm46l2t4nMqHh4e3rO8arvVh6V5nGDyskhzS42Hh4c35k02ytXibILPixGjvIeHh4fX4s3DqpYSktmTl4iHh4f3FG/V8X8Sen5PknJOn4aHh4e3kdfbLkeLdbB1zu8flXHx8PDwxrxqcJNi7tqmgSgx4OHh4d3G6y3lvRar6xnzqPDw8PDewEsOpXrl3UlxofwK8PDw8DbyetvcpHjRSzA9Kh4eHt4eXj5979UkBdy8GevDXHh4eHg38woHS62WqXwkKadcjMDDw8O7gZcwqu1W1ZJETlr2xYCHh4e3iFdtnMo3u/mWukqKvhjw8PDwlvKO4kimyZ+QlySaiQEPDw/vBl6vZFBd6Ce/JIdteHh4eDt5k5TQa8PqMQrlZjw8PLwtvF5hNw+xupmeHLPh4eHh7eRVC6zV4JIjtGqKisq4eHh4eI/yku14cjUpMSzeUuPh4eE9yssbCHrh9goZeHh4ePt51Was6qKfbKyrGDw8PLyneHvarSZFjUKZAw8PD+9m3vcNPDw8PDw8PDy8F4xfGuoRJOL8NpUAAAAASUVORK5CYII=">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC2ElEQVR42u3aUVLjMBAE0Nz/0uwBANM9MosjPX+lkpStp1TRzIxeH0deL2xsbGxsbGxsbOxHsl/x9fn71/f5/Ol3d7i+2xeAcs3Y2NjYJ7B/+NMfsGefJtv03RryNWNjY2Ofw74OretH3hVd+fbla8bGxsbGbuMkuWdSVCSbhY2NjY09C7C2CZUUJLMQxcbGxsaeNWiST/NyYlZ+/NdeGjY2Nvbj2bNA+tvXfzDfxsbGxn4ke+VqG/1J8MziKronNjY29qbstmW/cuwmKVeSoBqOIrCxsbEPYOdD2ZXWf47PwVFbChsbG3tT9mzo27Z+ksW1vPodbGxs7APYSQzkAZMUNvkT83bVcDyAjY2N/bbs9bb+70XdLwYYNjY29kbsu2ImD7O2bbTe6sLGxsY+jZ2ETduEmh3fyUNxePgSGxsbe2t2sqCV5tRK4OVHi7CxsbFPYLdHapJCpWjZx7GXbDc2NjY29l1x8lFes3Z/PcbAxsbGPobdNneu73D9Tnv0J/+pbs5tbGxs7AezE/BsnJCPZmdbnG8NNjY29t7slUOTK6OF2ZB4qeWEjY2NvSl7pYkzazYVxcMo6rCxsbFPY+dlQ9IeyouZWXuojVVsbGzsM9ntsZu89TMbA+fxNmwqYWNjY785Ow+V9cOX7TdngVdUYNjY2NhbsNt//WcHd5JiIy9L2s3CxsbGPoG9HjazMqYd7s5+BmxsbOwT2HlIrBQPs0FCG4dFLw0bGxt7U/Zs0LuyoLwsaQMVGxsb+wT2+sB1VtLMhgGzATA2Njb23uxXfOWj1rzZNAvLdg3Y2NjYJ7Dz0Go3YhZR7aHPm5tK2NjY2G/LXg+t9Q1q20nFgSFsbGxs7NHrNhTzwqZtQmFjY2NjJ22gdiTcjnLzoTI2Njb2mex8uNtS86f8EEJxKYKNjY19Grtt2eQPmx3uyTfreoOwsbGxT2Cfc2FjY2NjY2NjY2M/5voHG2VJS1pkMYsAAAAASUVORK5CYII=">
     
 </ul>
 
@@ -477,7 +477,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=《ECMAScript 6入门（第三版）》读书笔记——let &amp; const&url=http://www.sharelogs.net/2017/11/05/let &amp; const/index.html&pic=http://www.sharelogs.net/img/mylogo.jpg&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=《ECMAScript 6入门（第三版）》——Set和Map数据结构&url=http://www.sharelogs.net/2017/11/06/Set和Map数据结构/index.html&pic=http://www.sharelogs.net/img/mylogo.jpg&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -498,7 +498,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Sharelogs&title=《ECMAScript 6入门（第三版）》读书笔记——let &amp; const&summary=&pics=http://www.sharelogs.net/img/mylogo.jpg&url=http://www.sharelogs.net/2017/11/05/let & const/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Sharelogs&title=《ECMAScript 6入门（第三版）》——Set和Map数据结构&summary=分享有意思的玩意&pics=http://www.sharelogs.net/img/mylogo.jpg&url=http://www.sharelogs.net/2017/11/06/Set和Map数据结构/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -518,22 +518,44 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <blockquote>
-<h3 id="let"><a href="#let" class="headerlink" title="let"></a>let</h3></blockquote>
-<h4 id="特征"><a href="#特征" class="headerlink" title="特征"></a>特征</h4><ul>
-<li>没有变量提升</li>
-<li>只在命令所在代码块内有效</li>
-<li>不能在相同作用域内，重复声明同一个变量</li>
-<li>暂时性死区，即不可再let声明之前使用变量，抛出错误</li>
-</ul>
-<h4 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h4><ul>
-<li>for循环计数器</li>
-</ul>
-<blockquote>
-<h3 id="const"><a href="#const" class="headerlink" title="const"></a>const</h3></blockquote>
-<h4 id="本质"><a href="#本质" class="headerlink" title="本质"></a>本质</h4><p>变量指向的那个内存地址不得改动</p>
+<h4 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h4></blockquote>
+<p>类似于数组，但是成员的值都是唯一的，没有重复的值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">const s = new Set();</div><div class="line"></div><div class="line">[2, 3, 5, 4, 5, 2, 2].forEach(x =&gt; s.add(x));</div><div class="line">for (let i of s) &#123;</div><div class="line">  console.log(i);</div><div class="line">&#125;</div><div class="line">// 2 3 5 4</div><div class="line"></div><div class="line">//接受一个数组（或者具有 iterable 接口的其他数据结构）作为参数，用来初始化</div><div class="line">// 例一</div><div class="line">const set = new Set([1, 2, 3, 4, 4]);</div><div class="line">[...set]</div><div class="line">// [1, 2, 3, 4]</div><div class="line">// 例二</div><div class="line">const items = new Set([1, 2, 3, 4, 5, 5, 5, 5]);</div><div class="line">items.size // 5</div><div class="line">// 例三</div><div class="line">function divs () &#123;</div><div class="line">  return [...document.querySelectorAll(&apos;div&apos;)];</div><div class="line">&#125;</div><div class="line">const set = new Set(divs());</div><div class="line">set.size // 56</div><div class="line">// 类似于</div><div class="line">divs().forEach(div =&gt; set.add(div));</div><div class="line">set.size // 56</div></pre></td></tr></table></figure>
 <ul>
-<li>简单数据类型，值保存在变量指向的内存地址</li>
-<li>复合类型，保存的是一个指针，内部数据结构不能控制</li>
+<li>接受数组作为参数</li>
+<li>在 Set 内部，两个NaN是相等</li>
+<li>向 Set 加入值的时候，不会发生类型转换，所以5和”5”是两个不同的值</li>
+<li>Set 结构的实例默认可遍历，它的默认遍历器生成函数就是它的values方法</li>
+</ul>
+<h4 id="Set-实例的属性和方法"><a href="#Set-实例的属性和方法" class="headerlink" title="Set 实例的属性和方法"></a>Set 实例的属性和方法</h4><ul>
+<li>Set.prototype.constructor<br>构造函数，默认就是Set函数</li>
+<li>Set.prototype.size<br>返回Set实例的成员总数</li>
+<li>add(value)<br>添加某个值，返回Set结构本身</li>
+<li>delete(value)<br>删除某个值，返回一个布尔值，表示删除是否成功</li>
+<li>has(value)<br>返回一个布尔值，表示该值是否为Set的成员</li>
+<li>clear()<br>清除所有成员，没有返回值</li>
+<li>keys()<br>返回键名的遍历器</li>
+<li>values()<br>返回键值的遍历器</li>
+<li>entries()<br>返回键值对的遍历器</li>
+<li>forEach()<br>使用回调函数遍历每个成员</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">let set = new Set([&apos;red&apos;, &apos;green&apos;, &apos;blue&apos;]);</div><div class="line"></div><div class="line">for (let item of set.keys()) &#123;</div><div class="line">  console.log(item);</div><div class="line">&#125;</div><div class="line">// red</div><div class="line">// green</div><div class="line">// blue</div><div class="line"></div><div class="line">for (let item of set.values()) &#123;</div><div class="line">  console.log(item);</div><div class="line">&#125;</div><div class="line">// red</div><div class="line">// green</div><div class="line">// blue</div><div class="line"></div><div class="line">for (let item of set.entries()) &#123;</div><div class="line">  console.log(item);</div><div class="line">&#125;</div><div class="line">// [&quot;red&quot;, &quot;red&quot;]</div><div class="line">// [&quot;green&quot;, &quot;green&quot;]</div><div class="line">// [&quot;blue&quot;, &quot;blue&quot;]</div><div class="line"></div><div class="line">set = new Set([1, 4, 9]);</div><div class="line">set.forEach((value, key) =&gt; console.log(key + &apos; : &apos; + value))</div><div class="line">// 1 : 1</div><div class="line">// 4 : 4</div><div class="line">// 9 : 9</div></pre></td></tr></table></figure>
+<blockquote>
+<h4 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h4></blockquote>
+<p>类似于对象，也是键值对的集合，但是“键”的范围不限于字符串，各种类型的值（包括对象）都可以当作键</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">const map = new Map([</div><div class="line">  [&apos;name&apos;, &apos;张三&apos;],</div><div class="line">  [&apos;title&apos;, &apos;Author&apos;]</div><div class="line">]);</div><div class="line"></div><div class="line">map.size // 2</div><div class="line">map.has(&apos;name&apos;) // true</div><div class="line">map.get(&apos;name&apos;) // &quot;张三&quot;</div><div class="line">map.has(&apos;title&apos;) // true</div><div class="line">map.get(&apos;title&apos;) // &quot;Author&quot;</div></pre></td></tr></table></figure>
+<ul>
+<li>对同一个键多次赋值，后面的值将覆盖前面的值</li>
+<li>读取一个未知的键，则返回undefined</li>
+<li>只有对同一个对象的引用，Map 结构才将其视为同一个键</li>
+</ul>
+<h4 id="实例的属性和操作方法"><a href="#实例的属性和操作方法" class="headerlink" title="实例的属性和操作方法"></a>实例的属性和操作方法</h4><ul>
+<li>size<br>返回 Map 结构的成员总数</li>
+<li>set(key, value)</li>
+<li>get(key)</li>
+<li>has(key)</li>
+<li>delete(key)</li>
+<li>clear()</li>
 </ul>
 
         
@@ -587,7 +609,7 @@
 
     <!-- Next Nav -->
     
-        <a href="/2017/11/04/myFirstLog/" id="post_nav-older" class="next-content">
+        <a href="/2017/11/05/Symbol/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
@@ -679,7 +701,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2017/11/">十一月 2017<span class="sidebar_archives-count">3</span></a>
+                <a class="sidebar_archives-link" href="/archives/2017/11/">十一月 2017<span class="sidebar_archives-count">12</span></a>
             </ul>
         </li>
         
@@ -697,7 +719,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/读书笔记/">读书笔记<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/读书笔记/">读书笔记<span class="sidebar_archives-count">10</span></a>
             </ul>
         </li>
         
@@ -711,7 +733,7 @@
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">3</span>
+                <span class="sidebar-badge">12</span>
             </a>
         </li>
         

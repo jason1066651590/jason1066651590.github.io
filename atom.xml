@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.sharelogs.net/"/>
-  <updated>2017-11-04T11:15:56.377Z</updated>
+  <updated>2017-11-05T09:05:31.416Z</updated>
   <id>http://www.sharelogs.net/</id>
   
   <author>
@@ -17,11 +17,253 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>《ECMAScript 6入门（第三版）》——Set和Map数据结构</title>
+    <link href="http://www.sharelogs.net/2017/11/06/Set%E5%92%8CMap%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    <id>http://www.sharelogs.net/2017/11/06/Set和Map数据结构/</id>
+    <published>2017-11-05T17:04:02.000Z</published>
+    <updated>2017-11-05T09:05:31.416Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;h4 id=&quot;Set&quot;&gt;&lt;a href=&quot;#Set&quot; class=&quot;headerlink&quot; title=&quot;Set&quot;&gt;&lt;/a&gt;Set&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;p&gt;类似于数组，但是成员的值都是唯一的，没有重复的值&lt;/p&gt;
+&lt;figure
+        
+      
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://www.sharelogs.net/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="ES6" scheme="http://www.sharelogs.net/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《ECMAScript 6入门（第三版）》——Symbol</title>
+    <link href="http://www.sharelogs.net/2017/11/05/Symbol/"/>
+    <id>http://www.sharelogs.net/2017/11/05/Symbol/</id>
+    <published>2017-11-05T15:49:52.000Z</published>
+    <updated>2017-11-05T07:51:11.421Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;原始数据类型Symbol，表示独一无二的值&lt;br&gt;&lt;em&gt;接受一个字符串作为参数，表示对 Symbol 实例的描述，主要是为了在控制台显示，或者转为字符串时，比较容易区分&lt;/em&gt;&lt;br&gt;&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://www.sharelogs.net/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="ES6" scheme="http://www.sharelogs.net/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《ECMAScript 6入门（第三版）》——对象扩展</title>
+    <link href="http://www.sharelogs.net/2017/11/05/%E5%AF%B9%E8%B1%A1%E6%89%A9%E5%B1%95/"/>
+    <id>http://www.sharelogs.net/2017/11/05/对象扩展/</id>
+    <published>2017-11-05T05:04:10.000Z</published>
+    <updated>2017-11-04T21:04:47.284Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;属性和方法简写&quot;&gt;&lt;a href=&quot;#属性和方法简写&quot; class=&quot;headerlink&quot; title=&quot;属性和方法简写&quot;&gt;&lt;/a&gt;属性和方法简写&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://www.sharelogs.net/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="ES6" scheme="http://www.sharelogs.net/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《ECMAScript 6入门（第三版）》——数组扩展</title>
+    <link href="http://www.sharelogs.net/2017/11/05/%E6%95%B0%E7%BB%84%E6%89%A9%E5%B1%95/"/>
+    <id>http://www.sharelogs.net/2017/11/05/数组扩展/</id>
+    <published>2017-11-05T04:29:21.000Z</published>
+    <updated>2017-11-04T20:31:16.903Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;扩展运算符（…）&quot;&gt;&lt;a href=&quot;#扩展运算符（…）&quot; class=&quot;headerlink&quot; title=&quot;扩展运算符（…）&quot;&gt;&lt;/a&gt;扩展运算符（…）&lt;/h4&gt;&lt;p&gt;将一个数组转为用逗号分隔的参数序列&lt;/p&gt;
+&lt;h5 id=&quot;应用&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://www.sharelogs.net/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="ES6" scheme="http://www.sharelogs.net/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《ECMAScript 6入门（第三版）》——函数扩展</title>
+    <link href="http://www.sharelogs.net/2017/11/05/%E5%87%BD%E6%95%B0%E6%89%A9%E5%B1%95/"/>
+    <id>http://www.sharelogs.net/2017/11/05/函数扩展/</id>
+    <published>2017-11-05T03:39:43.000Z</published>
+    <updated>2017-11-04T19:40:52.597Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;rest参数&quot;&gt;&lt;a href=&quot;#rest参数&quot; class=&quot;headerlink&quot; title=&quot;rest参数&quot;&gt;&lt;/a&gt;rest参数&lt;/h4&gt;&lt;p&gt;（形式为…变量名），用于获取函数的多余参数，这样就不需要使用arguments对象了。rest
+        
+      
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://www.sharelogs.net/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="ES6" scheme="http://www.sharelogs.net/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《ECMAScript 6入门（第三版）》——数值扩展</title>
+    <link href="http://www.sharelogs.net/2017/11/05/%E6%95%B0%E5%80%BC%E6%89%A9%E5%B1%95/"/>
+    <id>http://www.sharelogs.net/2017/11/05/数值扩展/</id>
+    <published>2017-11-05T03:08:04.000Z</published>
+    <updated>2017-11-04T19:09:25.515Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;二进制和八进制表示法&quot;&gt;&lt;a href=&quot;#二进制和八进制表示法&quot; class=&quot;headerlink&quot; title=&quot;二进制和八进制表示法&quot;&gt;&lt;/a&gt;二进制和八进制表示法&lt;/h4&gt;&lt;p&gt;前缀0b（或0B）和0o（或0O）&lt;/p&gt;
+&lt;figure
+        
+      
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://www.sharelogs.net/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="ES6" scheme="http://www.sharelogs.net/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《ECMAScript 6入门（第三版）》——正则表达式扩展</title>
+    <link href="http://www.sharelogs.net/2017/11/05/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%89%A9%E5%B1%95/"/>
+    <id>http://www.sharelogs.net/2017/11/05/正则表达式扩展/</id>
+    <published>2017-11-05T02:35:27.000Z</published>
+    <updated>2017-11-05T11:55:12.352Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;RegExp构造函数&quot;&gt;&lt;a href=&quot;#RegExp构造函数&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://www.sharelogs.net/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="ES6" scheme="http://www.sharelogs.net/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《ECMAScript 6入门（第三版）》读书笔记——字符串扩展</title>
+    <link href="http://www.sharelogs.net/2017/11/05/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%89%A9%E5%B1%95/"/>
+    <id>http://www.sharelogs.net/2017/11/05/字符串扩展/</id>
+    <published>2017-11-05T02:11:10.000Z</published>
+    <updated>2017-11-04T18:13:58.051Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;codePointAt&quot;&gt;&lt;a href=&quot;#codePointAt&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://www.sharelogs.net/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="ES6" scheme="http://www.sharelogs.net/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《ECMAScript 6入门（第三版）》读书笔记——解构赋值</title>
+    <link href="http://www.sharelogs.net/2017/11/05/%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC/"/>
+    <id>http://www.sharelogs.net/2017/11/05/解构赋值/</id>
+    <published>2017-11-04T20:23:48.000Z</published>
+    <updated>2017-11-04T12:34:25.813Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h4&gt;&lt;p&gt;从数组和对象中提取值，对变量进行赋值&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;数组解构赋值&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://www.sharelogs.net/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="ES6" scheme="http://www.sharelogs.net/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>《ECMAScript 6入门（第三版）》读书笔记——let &amp; const</title>
-    <link href="http://www.sharelogs.net/2017/11/05/let%20&amp;%20const/"/>
-    <id>http://www.sharelogs.net/2017/11/05/let &amp; const/</id>
+    <link href="http://www.sharelogs.net/2017/11/05/let-const/"/>
+    <id>http://www.sharelogs.net/2017/11/05/let-const/</id>
     <published>2017-11-04T19:06:56.000Z</published>
-    <updated>2017-11-04T11:15:56.377Z</updated>
+    <updated>2017-11-04T12:33:36.428Z</updated>
     
     <summary type="html">
     
@@ -31,6 +273,7 @@
         
           &lt;blockquote&gt;
 &lt;h3 id=&quot;let&quot;&gt;&lt;a href=&quot;#let&quot; class=&quot;headerlink&quot; title=&quot;let&quot;&gt;&lt;/a&gt;let&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
 &lt;h4 id=&quot;特征&quot;&gt;&lt;a href=&quot;#特征&quot;
         
       

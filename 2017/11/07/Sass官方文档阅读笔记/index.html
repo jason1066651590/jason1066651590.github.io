@@ -37,7 +37,7 @@
     
     <title>
         
-            《ECMAScript 6入门（第三版）》——正则表达式扩展 | 
+            Sass官方文档阅读笔记 | 
         
         Sharelogs
     </title>
@@ -49,7 +49,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="花猪">
     <meta name="description" itemprop="description" content="分享有意思的玩意">
-    <meta name="keywords" content="sharelogs,ES6">
+    <meta name="keywords" content="sharelogs,Sass">
 
     <!-- Import lsloader -->
     <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf("/*"+c+"*/")!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
@@ -255,18 +255,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://www.sharelogs.net">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="《ECMAScript 6入门（第三版）》——正则表达式扩展 | Sharelogs">
+    <meta property="og:title" content="Sass官方文档阅读笔记 | Sharelogs">
     <meta property="og:image" content="http://www.sharelogs.net/img/mylogo.jpg" />
     <meta property="og:description" content="分享有意思的玩意">
-    <meta property="og:article:tag" content="ES6"> 
+    <meta property="og:article:tag" content="Sass"> 
 
     
-        <meta property="article:published_time" content="Sun Nov 05 2017 02:35:27 GMT+0000" />
-        <meta property="article:modified_time" content="Sun Nov 05 2017 19:55:12 GMT+0800" />
+        <meta property="article:published_time" content="Mon Nov 06 2017 19:31:38 GMT+0000" />
+        <meta property="article:modified_time" content="Mon Nov 06 2017 19:32:46 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="《ECMAScript 6入门（第三版）》——正则表达式扩展 | Sharelogs">
+    <meta name="twitter:title" content="Sass官方文档阅读笔记 | Sharelogs">
     <meta name="twitter:description" content="分享有意思的玩意">
     <meta name="twitter:image" content="http://www.sharelogs.net/img/mylogo.jpg">
     <meta name="twitter:card" content="summary_large_image" />
@@ -274,7 +274,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://www.sharelogs.net/2017/11/05/正则表达式扩展/index.html" />
+        <link rel="canonical" href="http://www.sharelogs.net/2017/11/07/Sass官方文档阅读笔记/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -286,10 +286,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://www.sharelogs.net/2017/11/05/正则表达式扩展/index.html",
-    "headline": "《ECMAScript 6入门（第三版）》——正则表达式扩展",
-    "datePublished": "Sun Nov 05 2017 02:35:27 GMT+0000",
-    "dateModified": "Sun Nov 05 2017 19:55:12 GMT+0800",
+    "mainEntityOfPage": "http://www.sharelogs.net/2017/11/07/Sass官方文档阅读笔记/index.html",
+    "headline": "Sass官方文档阅读笔记",
+    "datePublished": "Mon Nov 06 2017 19:31:38 GMT+0000",
+    "dateModified": "Mon Nov 06 2017 19:32:46 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "花猪",
@@ -307,7 +307,7 @@
             "url": "/img/mylogo.jpg"
         }
     },
-    "keywords": ",ES6sharelogs",
+    "keywords": ",Sasssharelogs",
     "description": "分享有意思的玩意",
 }
 </script>
@@ -367,15 +367,6 @@
     <!-- Left aligned menu below button -->
     
     
-    <button id="post-toc-trigger-btn"
-        class="mdl-button mdl-js-button mdl-button--icon">
-        <i class="material-icons">format_list_numbered</i>
-    </button>
-
-    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#RegExp构造函数"><span class="post-toc-number">1.</span> <span class="post-toc-text">RegExp构造函数</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#u修饰符"><span class="post-toc-number">2.</span> <span class="post-toc-text">u修饰符</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#y修饰符"><span class="post-toc-number">3.</span> <span class="post-toc-text">y修饰符</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#sticky属性"><span class="post-toc-number">4.</span> <span class="post-toc-text">sticky属性</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#flags-属性"><span class="post-toc-number">5.</span> <span class="post-toc-text">flags 属性</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#后行断言"><span class="post-toc-number">6.</span> <span class="post-toc-text">后行断言</span></a></li></ol>
-    </ul>
-    
 
 
 
@@ -405,7 +396,7 @@
         
     
             <p class="article-headline-p">
-                《ECMAScript 6入门（第三版）》——正则表达式扩展
+                Sass官方文档阅读笔记
             </p>
         </div>
 
@@ -424,7 +415,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>花猪</strong>
-        <span>11月 05, 2017</span>
+        <span>11月 06, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -446,7 +437,7 @@
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
     <li class="mdl-menu__item">在其它设备中阅读本文章</li>
     
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC6klEQVR42u3a0Y6jMAwF0P7/T+++jrQC7nXQbAknT1WHhhxXGtc2nz+vXB9sbGxsbGxsbGzsr2R/4vXz+qPXR389v+P5bkdX5mfGxsbGfgP74l//v1scbD0LzdH+yZ7FmbGxsbFfwE5SS8trAzS7b/JZbGxsbOzza/L0liSkWQmEjY2Njd02kvJy4vxTefMIGxsbG3u9qdQeNw9BmyB/tZeGjY2N/fXsuwa9v/n6i+bb2NjY2P+V3a68qJgVIXnaq0+OjY2NvSl7NkydFSHtfc8HDxfpalaBYWNjYz+W3T6sM0sqbasoGRgX+2NjY2Nvys5TRd7oaZv+7fvJF4aNjY39Tnbyg35WJLSrbWNFRQ42Njb21ux8o/Wh7HqZkac0bGxs7Dew2x/0swPlI4f2bPmZsbGxsfdmrzSSksHtrMCYNZWKBIaNjY29BTtp7s9aOSuAWTjq8QA2Njb2Fuz2h36e5NqBblLw5GGtm0rY2NjYW7DbJlHbcpoVJ215Ew16sbGxsbdjz46etJbyAfBdY+B6PICNjY39cPZKQz8P3EqjKkmx0aACGxsbe2v2XQ36PHXlrag2fMOpCDY2NvbD2W36WXmMMgG3Q+Lo/NjY2Nhbs9uHdYbFwEKwZgsbGxv7nex2JJBc3xYV7Vg3SnXY2NjYW7PzBDMLR8uoG0YrTSVsbGzsh7PzFn8eoNkIud2zHS1gY2Nj78pOSoXzGxdtnZiX37coe7CxsbFfyc4PnSeVJDSzMF0kXWxsbOxN2XniSV7PGkZ3Jcti0IuNjY29EXuWxvIEk4epHTPkqQsbGxt7b/bKg5WzRDV7Z1bwYGNjY7+HnSetBJw/+tPykhLlhvk2NjY29mPZS833+JGd2dHb8GFjY2Nj59S2VGgHwDn4okzCxsbGxi5T0cqeNSkpqLCxsbFfwG5LiFk5kY9p20HyxVeCjY2NvTW7HfS2wVopJxJqEnpsbGzsXdnvWdjY2NjY2NjY2Nhfs/4C6PNyFJc+6OoAAAAASUVORK5CYII=">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC1klEQVR42u3aW26DMBAF0Ox/0+kCKuBeGypqH3+hQqiPI2U0j893y/XBxsbGxsbGxsbGfiX7E6/D1/26e/TZo+ujvxzdHdszNjY29trsi5/+g2fOt3L+zPl78uviy8DGxsbegD0feM6Rdci56bixsbGxsRNYcjQJMkmBsLGxsbGfCGB3hZ/8U9jY2NjYYwWasbJRu92xFOXBWho2Njb269l5uec913/a38bGxsZ+MbtdecP1PIwloS4JVMXOsbGxsRdl54HhfFszmLw93O4TGxsbex92vqGx0n8bDvPQVbQlsLGxsbdht83X9jhm0p6ppgI2Njb2ouyxstHYeE2blrT/sRjZwcbGxl6InQ9WFuWb4D1tGpM3oYu4jY2Njb0Ee6wkdBc7GQwaS3uwsbGxd2bnjdj5lCNPMNoS0kV7ABsbG3sDdlLuabeVhKW8Ady2HLCxsbFXZc+Ue/Ii1ExDor072N/GxsbGXpTdDkGeB5t8MKg9sujLw8bGxl6UnTdZv+UaS0LyUlTeSMDGxsZem902d+8q2c83d+ukBRsbG3tpdp5C5K2C+dZv+wVcHDQ2Njb2Buw85Iy1bNvkIX9PPbKDjY2NvRB7JiC1gzVJ2jOTGp0fATY2Nvaq7LylmgektoUwdlj1qCg2Njb20uyLn/7p0JUc0BODm9jY2Nh7ssfGMdvQ0g5cjrUEsLGxsbGT0ZwnmgfJoXyChY2Njb0nez5c5enN2MBQ+yQ2NjY2dts8aBu67YE+kopgY2Nj/1v2TGt2phiUH9ZdxSZsbGzsVdnzQWJ+pKZtNrdJCDY2NvYO7HYsZmywJi8/jaUugxkYNjY29kLstmQ/M/Qz/8423GJjY2Nj56ElAeeNhHxvF7vCxsbGxr71mfY4Zt6AjY2NvQ87b+62KUpebLqrhYyNjY29Gzsv0+QpxHwYGxvoeWRkBxsbG/vF7H0WNjY2NjY2NjY29mvWD6OfC200bbxRAAAAAElFTkSuQmCC">
     
 </ul>
 
@@ -460,7 +451,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/ES6/">ES6</a>
+        <a class="post_tag-link" href="/tags/Sass/">Sass</a>
     </ul>
     
 
@@ -477,7 +468,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=《ECMAScript 6入门（第三版）》——正则表达式扩展&url=http://www.sharelogs.net/2017/11/05/正则表达式扩展/index.html&pic=http://www.sharelogs.net/img/mylogo.jpg&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Sass官方文档阅读笔记&url=http://www.sharelogs.net/2017/11/07/Sass官方文档阅读笔记/index.html&pic=http://www.sharelogs.net/img/mylogo.jpg&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -498,7 +489,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Sharelogs&title=《ECMAScript 6入门（第三版）》——正则表达式扩展&summary=分享有意思的玩意&pics=http://www.sharelogs.net/img/mylogo.jpg&url=http://www.sharelogs.net/2017/11/05/正则表达式扩展/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Sharelogs&title=Sass官方文档阅读笔记&summary=分享有意思的玩意&pics=http://www.sharelogs.net/img/mylogo.jpg&url=http://www.sharelogs.net/2017/11/07/Sass官方文档阅读笔记/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -517,15 +508,30 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h4 id="RegExp构造函数"><a href="#RegExp构造函数" class="headerlink" title="RegExp构造函数"></a>RegExp构造函数</h4><p>RegExp构造函数第一个参数是一个正则对象，那么可以使用第二个参数指定修饰符。而且，返回的正则表达式会忽略原有的正则表达式的修饰符，只使用新指定的修饰符</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">new RegExp(/abc/ig, &apos;i&apos;).flags</div><div class="line">// &quot;i&quot;</div></pre></td></tr></table></figure>
-<h4 id="u修饰符"><a href="#u修饰符" class="headerlink" title="u修饰符"></a>u修饰符</h4><p>含义为“Unicode模式”，用来正确处理大于\uFFFF的 Unicode 字符</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/^\uD83D/u.test(&apos;\uD83D\uDC2A&apos;) // false</div><div class="line">/^\uD83D/.test(&apos;\uD83D\uDC2A&apos;) // true</div></pre></td></tr></table></figure>
-<h4 id="y修饰符"><a href="#y修饰符" class="headerlink" title="y修饰符"></a>y修饰符</h4><p>y修饰符确保匹配必须从剩余的第一个位置开始</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var s = &apos;aaa_aa_a&apos;;</div><div class="line">var r1 = /a+/g;</div><div class="line">var r2 = /a+/y;</div><div class="line"></div><div class="line">r1.exec(s) // [&quot;aaa&quot;]</div><div class="line">r2.exec(s) // [&quot;aaa&quot;]</div><div class="line"></div><div class="line">r1.exec(s) // [&quot;aa&quot;]</div><div class="line">r2.exec(s) // null</div></pre></td></tr></table></figure>
-<h4 id="sticky属性"><a href="#sticky属性" class="headerlink" title="sticky属性"></a>sticky属性</h4><p>是否设置了y修饰符</p>
-<h4 id="flags-属性"><a href="#flags-属性" class="headerlink" title="flags 属性"></a>flags 属性</h4><p>返回正则表达式的修饰符</p>
-<h4 id="后行断言"><a href="#后行断言" class="headerlink" title="后行断言"></a>后行断言</h4><p>x只有在y后面才匹配，必须写成/(?&lt;=y)x/<br>x只有不在y后面才匹配，必须写成/(?&lt;!y)x/</p>
+        <ul>
+<li>$height 声明变量</li>
+<li>中划线命名的内容和下划线命名的内容是互通的，除了变量，也包括对混合器和Sass函数的命名</li>
+<li>嵌套CSS规则</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line">#content &#123;</div><div class="line">  article &#123;</div><div class="line">    h1 &#123; color: #333 &#125;</div><div class="line">    p &#123; margin-bottom: 1.4em &#125;</div><div class="line">  &#125;</div><div class="line">  aside &#123; background-color: #EEE &#125;</div><div class="line">&#125;</div><div class="line">/* 编译后 */</div><div class="line">#content article h1 &#123; color: #333 &#125;</div><div class="line">#content article p &#123; margin-bottom: 1.4em &#125;</div><div class="line">#content aside &#123; background-color: #EEE &#125;</div><div class="line"></div><div class="line">//父选择器的标识符&amp;</div><div class="line">article a &#123;</div><div class="line">  color: blue;</div><div class="line">  &amp;:hover &#123; color: red &#125;</div><div class="line">&#125;</div><div class="line">//编译后</div><div class="line">article a &#123; color: blue &#125;</div><div class="line">article a:hover &#123; color: red &#125;</div><div class="line"></div><div class="line">//群组选择器的嵌套</div><div class="line">.container &#123;</div><div class="line">  h1, h2, h3 &#123;margin-bottom: .8em&#125;</div><div class="line">&#125;</div><div class="line">nav, aside &#123;</div><div class="line">  a &#123;color: blue&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">//子组合选择器和同层组合选择器：&gt;、+和~</div><div class="line">article &#123;</div><div class="line">  ~ article &#123; border-top: 1px dashed #ccc &#125;</div><div class="line">  &gt; section &#123; background: #eee &#125;</div><div class="line">  dl &gt; &#123;</div><div class="line">    dt &#123; color: #333 &#125;</div><div class="line">    dd &#123; color: #555 &#125;</div><div class="line">  &#125;</div><div class="line">  nav + &amp; &#123; margin-top: 0 &#125;</div><div class="line">&#125;</div><div class="line">//编译后</div><div class="line">article ~ article &#123; border-top: 1px dashed #ccc &#125;</div><div class="line">article &gt; footer &#123; background: #eee &#125;</div><div class="line">article dl &gt; dt &#123; color: #333 &#125;</div><div class="line">article dl &gt; dd &#123; color: #555 &#125;</div><div class="line">nav + article &#123; margin-top: 0 &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>嵌套属性</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">nav &#123;</div><div class="line">  border: &#123;</div><div class="line">  style: solid;</div><div class="line">  width: 1px;</div><div class="line">  color: #ccc;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">//编译后</div><div class="line">nav &#123;</div><div class="line">  border-style: solid;</div><div class="line">  border-width: 1px;</div><div class="line">  border-color: #ccc;</div><div class="line">&#125;</div><div class="line">nav &#123;</div><div class="line">  border: 1px solid #ccc &#123;</div><div class="line">  left: 0px;</div><div class="line">  right: 0px;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">//编译后</div><div class="line">nav &#123;</div><div class="line">  border: 1px solid #ccc;</div><div class="line">  border-left: 0px;</div><div class="line">  border-right: 0px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>导入SASS文件<br>_局部文件的文件名以下划线开头,导入<code>themes/<em>night-sky.scss</em></code>这个局部文件里的变量，你只需在样式表中写<code>@import “themes/night-sky”</code></li>
+<li>!default 如果这个变量被声明赋值了，那就用它声明的值，否则就用这个默认值</li>
+<li>嵌套导入</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">//_blue-theme.scss</div><div class="line">aside &#123;</div><div class="line">  background: blue;</div><div class="line">  color: white;</div><div class="line">&#125;</div><div class="line"></div><div class="line">.blue-theme &#123;@import &quot;blue-theme&quot;&#125;</div><div class="line">//生成的结果跟你直接在.blue-theme选择器内写_blue-theme.scss文件的内容完全一样。</div><div class="line">.blue-theme &#123;</div><div class="line">  aside &#123;</div><div class="line">    background: blue;</div><div class="line">    color: #fff;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>静默注释</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">  color: #333; // 这种注释内容不会出现在生成的css文件中</div><div class="line">  padding: 0; /* 这种注释内容会出现在生成的css文件中 */</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>混合器@mixin</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div></pre></td><td class="code"><pre><div class="line">@mixin rounded-corners &#123;</div><div class="line">  -moz-border-radius: 5px;</div><div class="line">  -webkit-border-radius: 5px;</div><div class="line">  border-radius: 5px;</div><div class="line">&#125;</div><div class="line">//@include来使用这个混合器</div><div class="line">notice &#123;</div><div class="line">  background-color: green;</div><div class="line">  border: 2px solid #00aa00;</div><div class="line">  @include rounded-corners;</div><div class="line">&#125;</div><div class="line"></div><div class="line">//混合器中的CSS规则</div><div class="line">@mixin no-bullets &#123;</div><div class="line">  list-style: none;</div><div class="line">  li &#123;</div><div class="line">    list-style-image: none;</div><div class="line">    list-style-type: none;</div><div class="line">    margin-left: 0px;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">ul.plain &#123;</div><div class="line">  color: #444;</div><div class="line">  @include no-bullets;</div><div class="line">&#125;</div><div class="line">//编译后</div><div class="line">ul.plain &#123;</div><div class="line">  color: #444;</div><div class="line">  list-style: none;</div><div class="line">&#125;</div><div class="line">ul.plain li &#123;</div><div class="line">  list-style-image: none;</div><div class="line">  list-style-type: none;</div><div class="line">  margin-left: 0px;</div><div class="line">&#125;</div><div class="line"></div><div class="line">// 给混合器传参</div><div class="line">@mixin link-colors($normal, $hover, $visited) &#123;</div><div class="line">  color: $normal;</div><div class="line">  &amp;:hover &#123; color: $hover; &#125;</div><div class="line">  &amp;:visited &#123; color: $visited; &#125;</div><div class="line">&#125;</div><div class="line">a &#123;</div><div class="line">  @include link-colors(blue, red, green);</div><div class="line">&#125;</div><div class="line">//Sass最终生成的是：</div><div class="line">a &#123; color: blue; &#125;</div><div class="line">a:hover &#123; color: red; &#125;</div><div class="line">a:visited &#123; color: green; &#125;</div><div class="line"></div><div class="line">//允许通过语法$name: value的形式指定每个参数的值</div><div class="line">a &#123;</div><div class="line">    @include link-colors(</div><div class="line">      $normal: blue,</div><div class="line">      $visited: green,</div><div class="line">      $hover: red</div><div class="line">  );</div><div class="line">&#125;</div><div class="line"></div><div class="line">//@extend</div><div class="line">//任何跟.error有关的组合选择器样式也会被.seriousError以组合选择器的形式继承</div><div class="line">//继承是基于类的（有时是基于其他类型的选择器），所以继承应该是建立在语义化的关系上</div><div class="line">.error &#123;</div><div class="line">  border: 1px solid red;</div><div class="line">  background-color: #fdd;</div><div class="line">&#125;</div><div class="line">.seriousError &#123;</div><div class="line">  @extend .error;</div><div class="line">  border-width: 3px;</div><div class="line">&#125;</div><div class="line"></div><div class="line">//确保 / 不做除法运算而是完整地编译到 CSS 文件中，只需要用 #&#123;&#125; 插值语句将变量包</div><div class="line">p &#123;</div><div class="line">  $font-size: 12px;</div><div class="line">  $line-height: 30px;</div><div class="line">  font: #&#123;$font-size&#125;/#&#123;$line-height&#125;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
         
     
@@ -572,21 +578,13 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2017/11/05/数值扩展/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2017/11/05/字符串扩展/" id="post_nav-older" class="next-content">
+        <a href="/2017/11/06/Set和Map数据结构/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
